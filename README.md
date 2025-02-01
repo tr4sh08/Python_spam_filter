@@ -13,3 +13,10 @@ was as follows:
 2. Replace special symbols (e.g. '.', '?', '@'...) with an empty string
 3. Count the words
 The functions for these steps are in the module utils.py
+# Datasets:
+1. TRUTH_FILE is file with a name of mail and with a SPAM_TAG or HAM_TAG after it (for constants look utils.py)
+2. Mails are text files that will be read
+# How to use:
+1. Create object MyFilter
+2. Use method train(path), where path is location directory where is TRUTH_FILE located
+3. Use method test(path), where path is location of directory where PREDICTION_FILE will be created
